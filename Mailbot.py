@@ -55,8 +55,8 @@ if __name__ == "__main__":
         else: 
             greeting = f"Dear {person[1]},"
 
-        message = f"{greeting}\n\n{message}"
+        finalMessage = f"{greeting}\n\n{message}"
 
-        send_email(subject, message, person[0], smtp_server, smtp_port, smtp_username, smtp_password)
+        send_email(subject, finalMessage, person[0], smtp_server, smtp_port, smtp_username, smtp_password)
     print("Emails sent successfully.")
         
