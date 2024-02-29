@@ -13,9 +13,9 @@ def send_email(subject, message, to_email, smtp_server, smtp_port, smtp_username
     # Attach the message to the MIME and also encode it with utf-8 to display german "Umlaute".
     msg.attach(MIMEText(message, 'plain', 'utf-8'))
 
-    with open('flyer.jpg', 'rb') as img_file:
+    with open('Event-Flyer.jpg', 'rb') as img_file:
         img_data = img_file.read()
-        image = MIMEImage(img_data, name='flyer.jpg')
+        image = MIMEImage(img_data, name='Event-Flyer.jpg')
         msg.attach(image)
 
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
 
     # Read the list of email addresses from a file
-    with open('email_addresses.txt', 'r') as file:
+    with open('email_addresses.txt', 'r', encoding='utf-8') as file:
         email_addresses = [line.split(",") for line in file]
 
     #deletes all the line breaks at the end of the file
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     default_greeting = "Dear Blockchain-Enthusiast,"
 
     #Image path
-    image_path = 'flyer.jpg'  # Path to your image file
+    image_path = 'Event-Flyer.jpg'  # Path to your image file
 
     
     # Send emails to each address in the list
@@ -87,5 +87,7 @@ if __name__ == "__main__":
         finalMessage = f"{greeting}\n\n{message}"
 
         send_email(subject, finalMessage, person[0], smtp_server, smtp_port, smtp_username, smtp_password, image_path)
+
+        print(greeting)
 
     print("Emails sent successfully.")
