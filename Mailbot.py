@@ -87,5 +87,5 @@ if __name__ == "__main__":
         finalMessage = f"{greeting}\n\n{message}"
 
         send_email(subject, finalMessage, person[0], smtp_server, smtp_port, smtp_username, smtp_password, image_path)
-        print(greeting)
+
     print("Emails sent successfully.")
