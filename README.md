@@ -42,4 +42,18 @@ This Python script, known as the MailBot, simplifies the bulk sending of persona
 In response to the challenge of emails consistently ending up in spam folders, the BD/CRM Team developed a specialized MailBot. Led by Ioannis Dougas and assisted by Samuel Clauss, the team utilized insights from research to ensure reliable inbox delivery. Through strategic implementation of email volume management and distributing sending speed, the team mitigated the risk of triggering spam filters. The MailBot represents a significant advancement in SCL's communication strategy, ensuring important messages reach recipients effectively and consistently. In conclusion, the development of the MailBot demonstrates the team's commitment to innovation and proactive problem-solving.  
 
 
+## How to Use the Mailbot 
+
+1. Clone the Repo and open the Mailbot folder in your favourite Code environment. 
+2. In the email_addresses.txt file, add the mail addresses you want to reach and add a Name if you want to address the Recepient personally or add a "-" if you want to use the default greeting. 
+   It is important that the mails and the Name are separated by a comma. (see the example mails in the file) 
+3. In the email_text.txt file, add the mail you want to send. 
+4. Add the image you want to attach in the same folder as the three other files. 
+5. In the mailbot.py file, you have to change the following lines: 
+  - line 20 & line 83: replace the "Event-Flyer.jpg" by the name of your image/attachment. 
+  - line 38 - 41: insert your SMTP server details 
+  - line 48: set the subject of the mail 
+  - line 52: set the default greeting 
+7. run the mailbot.py file 
+
 </div>
