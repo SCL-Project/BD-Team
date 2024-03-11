@@ -1,23 +1,22 @@
 ### MailBot
 
 
-##Motivation 
+## Motivation 
 
-The BD/CRM Team, tasked with organizing guest speaker events, noticed a concerning trend: many emails sent to past event attendees to inform them about upcoming events were ending up in spam folders. Furthermore, we encountered difficulty in sending personalized bulk emails to our attendees, hindering the efficient distribution of information or updates to multiple recipients simultaneously.  
-Recognizing the importance of addressing this issue, Ioannis Dougas, a member of the BD Team responsible for external events, took proactive steps to investigate potential solutions. Through thorough research, Ioannis discovered that creating a MailBot, capable of sending emails in limited quantities while being able to customize the greeting based on optional recipient names, could potentially resolve our deliverability challenges (see Background Research). Collaborating with Samuel Clauss, another member of the BD Team, they joined forces to develop a MailBot tailored to SCLs needs, with the primary goal of ensuring our emails reach recipients' inboxes reliably.  
+The BD/CRM Team, tasked with organizing guest speaker events, noticed a concerning trend: many emails sent to past event attendees to inform them about upcoming events were ending up in spam folders. Furthermore, we encountered difficulty in sending personalized bulk emails to our attendees, hindering the efficient distribution of information or updates to multiple recipients simultaneously. Recognizing the importance of addressing this issue, Ioannis Dougas, a member of the BD Team responsible for external events, took proactive steps to investigate potential solutions. Through thorough research, Ioannis discovered that creating a MailBot, capable of sending emails in limited quantities while being able to customize the greeting based on optional recipient names, could potentially resolve our deliverability challenges (see Background Research). Collaborating with Samuel Clauss, another member of the BD Team, they joined forces to develop a MailBot tailored to SCLs needs, with the primary goal of ensuring our emails reach recipients' inboxes reliably.  
 
-##Background Research 
+## Background Research 
 
-#What is a spam folder? 
+_What is a spam folder?_ 
 
-The spam folder serves as storage space within your email account designated for unwanted messages or those deemed suspicious by email service providers (ESPs), consequently failing to land in your inbox. This folder is alternatively referred to as the "Bulk Folder" or "Junk Folder." Designed to streamline user experience, these filtering mechanisms aid users decrease the number of unnecessary and promotional emails1. 
+The spam folder serves as storage space within your email account designated for unwanted messages or those deemed suspicious by email service providers (ESPs), consequently failing to land in your inbox. This folder is alternatively referred to as the "Bulk Folder" or "Junk Folder." Designed to streamline user experience, these filtering mechanisms aid users decrease the number of unnecessary and promotional emails. 
 
-#How does this system operate?  
+_How does this system operate?_  
 
-When an email is dispatched, ESPs examine both the sender's email address reputation and the message content. Should any elements raise suspicion, ESPs automatically block the email from reaching the recipient's inbox. Additionally, recipients possess the ability to flag incoming emails as spam, further informing the ESPs' filtering algorithms2. 
-Sending emails improperly can have detrimental effects, potentially tarnishing the senders reputation and leading to placement in spam folders or even blockage by email providers. Adhering to email sending best practices is crucial for maintaining deliverability and ensuring messages reach the intended audience's inbox3.  
+When an email is dispatched, ESPs examine both the sender's email address reputation and the message content. Should any elements raise suspicion, ESPs automatically block the email from reaching the recipient's inbox. Additionally, recipients possess the ability to flag incoming emails as spam, further informing the ESPs' filtering algorithms. 
+Sending emails improperly can have detrimental effects, potentially tarnishing the senders reputation and leading to placement in spam folders or even blockage by email providers. Adhering to email sending best practices is crucial for maintaining deliverability and ensuring messages reach the intended audience's inbox.  
 
-Several strategies can help prevent emails from being flagged and ending up in the spam folder: 
+_Several strategies can help prevent emails from being flagged and ending up in the spam folder:_
 
 1. Manage Email Volume:  
 
@@ -31,10 +30,10 @@ Striking a good balance between emails sent and those received signals to email 
 
 Rather than sending all your emails simultaneously, it's advisable to pace your sending speed throughout the day. This approach minimizes the risk of triggering spam filters and enhances the likelihood of your emails reaching recipients at opportune times. By spreading out the sending schedule, you optimize the chances of engagement and response from your audience. 
 
-##Brief Code Description 
+## Brief Code Description 
 
 This Python script, known as the MailBot, simplifies the bulk sending of personalized emails via SMTP while mitigating the chance of ending in spam folders. It defines a function, `send_email`, which constructs and dispatches emails using provided subject, message, recipient email address, and SMTP server details. The script's main execution reads the SMTP configuration and email content from files, iterates through a list of recipients extracted from another file (in this case would be from the Eventbrite Attendees List), customizes the greeting based on optional recipient names, and sends individualized emails to each recipient. The MailBot efficiently avoids sending duplicate emails by intelligently skipping recipients listed multiple times, thereby minimizing redundant mailings. Additionally, it is programmed to seamlessly include image attachments along with the composed message, enhancing its versatility for diverse communication needs. By automating the email sending process, the script streamlines communication tasks, enabling efficient distribution of information or updates to multiple recipients simultaneously. 
 
-##Outlook 
+## Outlook 
 
 In response to the challenge of emails consistently ending up in spam folders, the BD/CRM Team developed a specialized MailBot. Led by Ioannis Dougas and assisted by Samuel Clauss, the team utilized insights from research to ensure reliable inbox delivery. Through strategic implementation of email volume management and distributing sending speed, the team mitigated the risk of triggering spam filters. The MailBot represents a significant advancement in SCL's communication strategy, ensuring important messages reach recipients effectively and consistently. In conclusion, the development of the MailBot demonstrates the team's commitment to innovation and proactive problem-solving.  
