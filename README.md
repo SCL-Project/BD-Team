@@ -1,7 +1,7 @@
 <div align="justify">
 
 
-### MailBot
+# MailBot
 
 
 ## Motivation 
