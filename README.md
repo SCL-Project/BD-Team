@@ -1,3 +1,7 @@
+<div align="justify">
+
+
+
 ### MailBot
 
 
@@ -37,3 +41,6 @@ This Python script, known as the MailBot, simplifies the bulk sending of persona
 ## Outlook 
 
 In response to the challenge of emails consistently ending up in spam folders, the BD/CRM Team developed a specialized MailBot. Led by Ioannis Dougas and assisted by Samuel Clauss, the team utilized insights from research to ensure reliable inbox delivery. Through strategic implementation of email volume management and distributing sending speed, the team mitigated the risk of triggering spam filters. The MailBot represents a significant advancement in SCL's communication strategy, ensuring important messages reach recipients effectively and consistently. In conclusion, the development of the MailBot demonstrates the team's commitment to innovation and proactive problem-solving.  
+
+
+</div>
