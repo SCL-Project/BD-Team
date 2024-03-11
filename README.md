@@ -53,6 +53,6 @@ In response to the challenge of emails consistently ending up in spam folders, t
   - line 38 - 41: insert your SMTP server details 
   - line 48: set the subject of the mail 
   - line 52: set the default greeting 
-7. run the mailbot.py file 
+6. run the mailbot.py file 
 
 </div>
