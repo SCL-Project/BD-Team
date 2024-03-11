@@ -45,8 +45,7 @@ In response to the challenge of emails consistently ending up in spam folders, t
 ## How to Use the Mailbot 
 
 1. Clone the Repo and open the Mailbot folder in your favourite Code environment. 
-2. In the email_addresses.txt file, add the mail addresses you want to reach and add a Name if you want to address the Recepient personally or add a "-" if you want to use the default greeting. 
-   It is important that the mails and the Name are separated by a comma. (see the example mails in the file) 
+2. In the email_addresses.txt file, add the mail addresses you want to reach and add a name if you want to address the recepient personally or add a "-" if you want to use the default greeting. It is important that the mails and the names are separated by a comma. (see the example in the file) 
 3. In the email_text.txt file, add the mail you want to send. 
 4. Add the image you want to attach in the same folder as the three other files. 
 5. In the mailbot.py file, you have to change the following lines: 
